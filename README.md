@@ -7,3 +7,18 @@ LIN Click board is configured to **5V** slave mode and jumper is set between 5V 
 
 GM uses bound rate of **10.417** . It is very important to set your serial communication bound rate from Arduino to LIN device to specified bound rate.  Otherwise, all data you record or send, will be useless.
 
+**Sniffer.ino**
+Gathers data from LIN BUS and writes it to SD card.
+
+
+Data Explained.
+
+Example:
+**0, 55, 2b, 4b, cc, 4b, fc, 74,**
+
+First 3 values are sent by **Master**
+**0**  -> Break Field
+**55** -> Sync Field
+**2b** -> Protected Identified - In this case, its asking for Intake Air Tempterature
+
+Next 4 bits are data from **Slave** followed by checksum(8/last bit).
