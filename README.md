@@ -17,8 +17,12 @@ Example:
 **0, 55, 2b, 4b, cc, 4b, fc, 74,**
 
 First 3 values are sent by **Master**
+
 **0**  -> Break Field
+
 **55** -> Sync Field
+
 **2b** -> Protected Identified - In this case, its asking for Intake Air Tempterature
 
-Next 4 bits are data from **Slave** followed by checksum(8/last bit).
+
+Next 4 bits are data from **Slave** followed by checksum(8th/last bit).
