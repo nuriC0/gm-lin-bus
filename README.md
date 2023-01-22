@@ -1,4 +1,5 @@
 # GM LIN BUS
+
 Using Arduino to interact with **2021 Corvette C8** LIN BUS
 
 In this project we will be using Arduino UNO R3 and Mikroe MIKROE-3816 LIN Click board.  We will read and write LIN BUS between ECU and MAF sensor which contains Intake Air Temperature and Barometric Pressure sensor.
@@ -26,3 +27,6 @@ First 3 values are sent by **Master**
 
 
 Next 4 bits are data from **Slave** followed by checksum(8th/last bit).
+
+
+## Instagram @oz_tt_c8
